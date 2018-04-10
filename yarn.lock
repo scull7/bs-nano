@@ -437,6 +437,10 @@ browser-process-hrtime@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/browser-process-hrtime/-/browser-process-hrtime-0.1.2.tgz#425d68a58d3447f02a04aa894187fce8af8b7b8e"
 
+browser-request@~0.3.0:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/browser-request/-/browser-request-0.3.3.tgz#9ece5b5aca89a29932242e18bf933def9876cc17"
+
 browser-resolve@^1.11.2:
   version "1.11.2"
   resolved "https://registry.yarnpkg.com/browser-resolve/-/browser-resolve-1.11.2.tgz#8ff09b0a2c421718a1051c260b32e48f442938ce"
@@ -544,6 +548,14 @@ cliui@^4.0.0:
     string-width "^2.1.1"
     strip-ansi "^4.0.0"
     wrap-ansi "^2.0.0"
+
+cloudant-follow@~0.16.1:
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/cloudant-follow/-/cloudant-follow-0.16.1.tgz#c5bb8a62db50b2b637416f47f493c293296be741"
+  dependencies:
+    browser-request "~0.3.0"
+    debug "^3.0.0"
+    request "^2.83.0"
 
 co@^4.6.0:
   version "4.6.0"
@@ -683,7 +695,7 @@ debug@^2.2.0, debug@^2.3.3, debug@^2.6.8:
   dependencies:
     ms "2.0.0"
 
-debug@^3.1.0:
+debug@^3.0.0, debug@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
   dependencies:
@@ -780,6 +792,10 @@ error-ex@^1.2.0:
   resolved "https://registry.yarnpkg.com/error-ex/-/error-ex-1.3.1.tgz#f855a86ce61adc4e8621c3cda21e7a7612c3a8dc"
   dependencies:
     is-arrayish "^0.2.1"
+
+errs@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/errs/-/errs-0.3.2.tgz#798099b2dbd37ca2bc749e538a7c1307d0b50499"
 
 es-abstract@^1.5.1:
   version "1.11.0"
@@ -2195,6 +2211,16 @@ nan@^2.3.0:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.10.0.tgz#96d0cd610ebd58d4b4de9cc0c6828cda99c7548f"
 
+nano@^6.4.3:
+  version "6.4.3"
+  resolved "https://registry.yarnpkg.com/nano/-/nano-6.4.3.tgz#d9679505dd431897a582ee717dc42e46f325d8e8"
+  dependencies:
+    cloudant-follow "~0.16.1"
+    debug "^2.2.0"
+    errs "^0.3.2"
+    request "~2.83.0"
+    underscore "^1.8.3"
+
 nanomatch@^1.2.9:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/nanomatch/-/nanomatch-1.2.9.tgz#879f7150cb2dab7a471259066c104eee6e0fa7c2"
@@ -2725,6 +2751,33 @@ request@^2.79.0, request@^2.83.0:
     tunnel-agent "^0.6.0"
     uuid "^3.1.0"
 
+request@~2.83.0:
+  version "2.83.0"
+  resolved "https://registry.yarnpkg.com/request/-/request-2.83.0.tgz#ca0b65da02ed62935887808e6f510381034e3356"
+  dependencies:
+    aws-sign2 "~0.7.0"
+    aws4 "^1.6.0"
+    caseless "~0.12.0"
+    combined-stream "~1.0.5"
+    extend "~3.0.1"
+    forever-agent "~0.6.1"
+    form-data "~2.3.1"
+    har-validator "~5.0.3"
+    hawk "~6.0.2"
+    http-signature "~1.2.0"
+    is-typedarray "~1.0.0"
+    isstream "~0.1.2"
+    json-stringify-safe "~5.0.1"
+    mime-types "~2.1.17"
+    oauth-sign "~0.8.2"
+    performance-now "^2.1.0"
+    qs "~6.5.1"
+    safe-buffer "^5.1.1"
+    stringstream "~0.0.5"
+    tough-cookie "~2.3.3"
+    tunnel-agent "^0.6.0"
+    uuid "^3.1.0"
+
 require-directory@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
@@ -3197,6 +3250,10 @@ uglify-to-browserify@~1.0.0:
 uid-number@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/uid-number/-/uid-number-0.0.6.tgz#0ea10e8035e8eb5b8e4449f06da1c730663baa81"
+
+underscore@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
 
 union-value@^1.0.0:
   version "1.0.0"

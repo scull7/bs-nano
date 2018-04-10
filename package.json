@@ -14,5 +14,8 @@
     "@glennsl/bs-jest": "^0.4.2",
     "coveralls": "^3.0.0",
     "nyc": "^11.6.0"
+  },
+  "dependencies": {
+    "nano": "^6.4.3"
   }
 }
