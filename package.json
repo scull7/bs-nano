@@ -1,0 +1,18 @@
+{
+  "name": "bs-nano",
+  "version": "0.1.0",
+  "description": "BuckleScript bindings to the CouchDB nano interface",
+  "main": "src/Nano.bs.js",
+  "repository": "git@github.com:scull7/bs-nano.git",
+  "author": "Nathan Sculli <scull7@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "bs-platform": "^2.2.3"
+  },
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.2",
+    "coveralls": "^3.0.0",
+    "nyc": "^11.6.0"
+  }
+}
