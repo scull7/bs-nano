@@ -14,7 +14,7 @@
     }
   ],
   "bs-dev-dependencies": [ "@glennsl/bs-jest" ],
-  "bs-dependencies": [ ],
-  "bsc-flags": [ "bs-super-errors", "-bs-sort-imports" ],
+  "bs-dependencies": [ "@glennsl/bs-json" ],
+  "bsc-flags": [ "-bs-super-errors", "-bs-sort-imports" ],
   "refmt": 3
 }
