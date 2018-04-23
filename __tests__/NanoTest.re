@@ -30,4 +30,16 @@ describe("Database Functions", () => {
       }
     }));
   });
+  testAsync("Get information about the alice database", (finish) => {
+    Nano.Db.get(conn, "alice", (result => {
+      switch (result) {
+      | `Error(e) => Nano_HttpError.getMessage(e) |> fail |> finish
+      | `Ok((info, _)) => {
+          Js.log2("db.get (alice)", info);
+          pass
+          |> finish;
+        }
+      }
+    }))
+  });
 });
