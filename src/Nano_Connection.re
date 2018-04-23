@@ -13,7 +13,11 @@ type t = {
   },
 };
 
-[@bs.send] external use : (t, string) => t = "";
+/*
+  Using `Scope` here because it is listed as an alias of `nano.use`.  So we
+  are assuming the `Scope` nomenclature is synonymous with `Document Store`.
+ */
+[@bs.send] external use : (t, string) => Nano_Scope.t = "";
 
 /*
    Create a nano connection using the given configuration object.
